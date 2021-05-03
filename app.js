@@ -30,10 +30,10 @@ app.get("/calc", (req, res) => {
         break;
     }
 if (isNaN(result))
-    res.send(`<h2> ${result}</h2>`);
-    res.send(`<h2> ANSWER  = ${result}</h2>`);
+    res.send(`${result}`);
+    res.send(`${result}`);
   } catch (error) {
-      res.send(`<h2> An error has occured ----> = ${error}</h2>`);
+      res.send(`An error has occured ----> = ${error}`);
     }
 });
 
